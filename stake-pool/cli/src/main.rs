@@ -245,6 +245,7 @@ fn command_create_pool(
     )?;
     let mut signers = vec![
         config.fee_payer.as_ref(),
+        &reserve_stake,
         &stake_pool_keypair,
         &validator_list,
         &mint_account,
